@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JclSkeleton.groovy | Mainframe DevOps</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/CPWR_DevOps_Examples/assets/css/0.styles.38688a71.css" as="style"><link rel="preload" href="/CPWR_DevOps_Examples/assets/js/app.75a8ec7a.js" as="script"><link rel="preload" href="/CPWR_DevOps_Examples/assets/js/28.206d73f5.js" as="script"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/10.4dc795ba.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/11.5935f050.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/12.0e2b9aca.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/13.78ae9647.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/14.a029e60a.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/15.ffe0034a.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/16.b348e724.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/17.ebd3ec0b.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/18.a8b355c3.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/19.46164589.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/2.da451cf3.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/20.da3c9874.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/21.461a1ac0.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/22.7e875135.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/23.f7fea76c.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/24.ae7c84bf.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/25.475d2aec.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/26.5e15d442.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/27.270e41aa.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/29.e41f7579.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/3.2a4c636b.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/30.61d12a91.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/31.e2654db9.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/32.be1c41d7.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/33.0efeaca3.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/34.1b4a3f7e.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/35.da69e6e8.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/36.fed52b27.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/37.c121f4e9.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/38.99baad0c.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/39.3dd6385d.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/4.4c65f11a.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/5.f5c5d1fb.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/6.9143e1f5.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/7.3a9c137b.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/8.f2dc9578.js"><link rel="prefetch" href="/CPWR_DevOps_Examples/assets/js/9.e743477c.js">
+    <link rel="stylesheet" href="/CPWR_DevOps_Examples/assets/css/0.styles.38688a71.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/CPWR_DevOps_Examples/" class="home-link router-link-active"><img src="/CPWR_DevOps_Examples/compuware.png" alt="Mainframe DevOps" class="logo"> <span class="site-name can-hide">Mainframe DevOps</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/CPWR_DevOps_Examples/" class="nav-link">Home</a></div><div class="nav-item"><a href="/CPWR_DevOps_Examples/pipelines/" class="nav-link router-link-active">Pipelines</a></div><div class="nav-item"><a href="/CPWR_DevOps_Examples/tool_configuration/" class="nav-link">Configuration</a></div><div class="nav-item"><a href="/CPWR_DevOps_Examples/code_examples/" class="nav-link">APIs</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/CPWR_DevOps_Examples/" class="nav-link">Home</a></div><div class="nav-item"><a href="/CPWR_DevOps_Examples/pipelines/" class="nav-link router-link-active">Pipelines</a></div><div class="nav-item"><a href="/CPWR_DevOps_Examples/tool_configuration/" class="nav-link">Configuration</a></div><div class="nav-item"><a href="/CPWR_DevOps_Examples/code_examples/" class="nav-link">APIs</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/CPWR_DevOps_Examples/pipelines/" class="sidebar-link">Getting Started</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/pipelines.html" class="sidebar-link">Example Pipelines</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/Mainframe_CI_Pipeline_from_Shared_Lib.html" class="sidebar-link">Shared Library Example</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/Mainframe-CI-Example-pipeline.html" class="sidebar-link">Basic Example</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/scenario/" class="sidebar-link">ISPW Scenario</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/scenario/TTT_scenario.html" class="sidebar-link">Total Test User Scenario</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/pipeline_parameters.html" class="sidebar-link">Pipeline Parameters</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/config_files.html" class="sidebar-link">Configuration Files</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/helper_classes/" class="sidebar-link">Helper classes</a></li><li><a href="/CPWR_DevOps_Examples/pipelines/Jenkins_Groovy.html" class="sidebar-link">Groovy Tips</a></li></ul> </div> <div class="page"> <div class="content"><h2 id="jclskeleton-groovy"><a href="#jclskeleton-groovy" aria-hidden="true" class="header-anchor">#</a> JclSkeleton.groovy</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code><span class="token keyword">package</span> com<span class="token operator">.</span>compuware<span class="token operator">.</span>devops<span class="token operator">.</span>util
+
+<span class="token comment">/**
+ Static Class to contain different JCL Skeletons
+*/</span>
+<span class="token keyword">class</span> <span class="token class-name">JclSkeleton</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">def</span> steps
+
+    <span class="token keyword">private</span> String skeletonPath     <span class="token operator">=</span> <span class="token string">'config\\skels'</span>       <span class="token comment">// Path containing JCL &quot;skeletons&quot; after downloading them from Git Hub Repository</span>
+    <span class="token keyword">private</span> String jobCardSkel      <span class="token operator">=</span> <span class="token string">'JobCard.jcl'</span>         <span class="token comment">// Skeleton for job cards</span>
+    <span class="token keyword">private</span> String iebcopySkel      <span class="token operator">=</span> <span class="token string">'iebcopy.skel'</span>        <span class="token comment">// Skeleton for IEBCOPY job</span>
+    <span class="token keyword">private</span> String iebcopyInDdSkel  <span class="token operator">=</span> <span class="token string">'iebcopyInDd.skel'</span>    <span class="token comment">// Skeleton for input DDs for IEBCOPY job</span>
+    <span class="token keyword">private</span> String deleteDsSkel     <span class="token operator">=</span> <span class="token string">'deleteDs.skel'</span>       <span class="token comment">// Skeleton for deleting the PDS after downloading copy books</span>
+
+    <span class="token keyword">private</span> String workspace
+
+    String jobCardJcl
+    String iebcopyCopyBooksJclSkel
+    String cleanUpDatasetJclSkel
+    String ispwApplication
+    String ispwPathNum
+</code></pre></div><h2 id="jclskeleton"><a href="#jclskeleton" aria-hidden="true" class="header-anchor">#</a> JclSkeleton</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code>    <span class="token function">JclSkeleton</span><span class="token punctuation">(</span>steps<span class="token punctuation">,</span> String workspace<span class="token punctuation">,</span> String ispwApplication<span class="token punctuation">,</span> String ispwPathNum<span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">.</span>steps              <span class="token operator">=</span> steps
+        <span class="token keyword">this</span><span class="token operator">.</span>workspace          <span class="token operator">=</span> workspace
+        <span class="token keyword">this</span><span class="token operator">.</span>ispwApplication    <span class="token operator">=</span> ispwApplication
+        <span class="token keyword">this</span><span class="token operator">.</span>ispwPathNum        <span class="token operator">=</span> ispwPathNum
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="initialize"><a href="#initialize" aria-hidden="true" class="header-anchor">#</a> initialize</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code>    <span class="token comment">/* A Groovy idiosyncrasy prevents constructors to use methods, therefore class might require an additional &quot;initialize&quot; method to initialize the class */</span>
+    <span class="token keyword">def</span> <span class="token function">initialize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token operator">.</span>jobCardJcl                 <span class="token operator">=</span> <span class="token function">readSkelFile</span><span class="token punctuation">(</span>jobCardSkel<span class="token punctuation">)</span><span class="token operator">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string gstring">&quot;\n&quot;</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">this</span><span class="token operator">.</span>cleanUpDatasetJclSkel      <span class="token operator">=</span> <span class="token function">readSkelFile</span><span class="token punctuation">(</span>deleteDsSkel<span class="token punctuation">)</span><span class="token operator">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string gstring">&quot;\n&quot;</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">this</span><span class="token operator">.</span>iebcopyCopyBooksJclSkel    <span class="token operator">=</span> <span class="token function">buildIebcopySkel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="buildiebcopyskel"><a href="#buildiebcopyskel" aria-hidden="true" class="header-anchor">#</a> buildIebcopySkel</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code>    <span class="token keyword">def</span> String <span class="token function">buildIebcopySkel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+
+        <span class="token keyword">def</span> jclSkel                 <span class="token operator">=</span> <span class="token function">readSkelFile</span><span class="token punctuation">(</span>iebcopySkel<span class="token punctuation">)</span><span class="token operator">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string gstring">&quot;\n&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">def</span> tempInputDdStatements   <span class="token operator">=</span> <span class="token function">readSkelFile</span><span class="token punctuation">(</span>iebcopyInDdSkel<span class="token punctuation">)</span>
+        <span class="token keyword">def</span> copyDdStatements        <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> tempInputDdStatements<span class="token operator">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            copyDdStatements<span class="token operator">.</span>add <span class="token punctuation">(</span><span class="token string gstring">&quot;       INDD=IN<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">def</span> inputDdJcl      <span class="token operator">=</span> tempInputDdStatements<span class="token operator">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string gstring">&quot;\n&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">def</span> inputCopyJcl    <span class="token operator">=</span> copyDdStatements<span class="token operator">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string gstring">&quot;\n&quot;</span><span class="token punctuation">)</span>
+
+        jclSkel             <span class="token operator">=</span> jclSkel<span class="token operator">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string gstring">&quot;&lt;source_copy_pds_list&gt;&quot;</span><span class="token punctuation">,</span> inputDdJcl<span class="token punctuation">)</span>
+        jclSkel             <span class="token operator">=</span> jclSkel<span class="token operator">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string gstring">&quot;&lt;source_input_dd_list&gt;&quot;</span><span class="token punctuation">,</span> inputCopyJcl<span class="token punctuation">)</span>
+        jclSkel             <span class="token operator">=</span> jclSkel<span class="token operator">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string gstring">&quot;&lt;ispw_application&gt;&quot;</span><span class="token punctuation">,</span> ispwApplication<span class="token punctuation">)</span>
+        jclSkel             <span class="token operator">=</span> jclSkel<span class="token operator">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string gstring">&quot;&lt;ispw_path&gt;&quot;</span><span class="token punctuation">,</span> ispwPathNum<span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> jclSkel
+
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="createiebcopycopybooksjcl"><a href="#createiebcopycopybooksjcl" aria-hidden="true" class="header-anchor">#</a> createIebcopyCopyBooksJcl</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code>    <span class="token keyword">def</span> String <span class="token function">createIebcopyCopyBooksJcl</span><span class="token punctuation">(</span>String targetDsn<span class="token punctuation">,</span> List copyMembers<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+
+        <span class="token keyword">def</span> iebcopyCopyBooksJcl <span class="token operator">=</span> <span class="token keyword">this</span><span class="token operator">.</span>jobCardJcl
+        <span class="token keyword">def</span> selectStatements    <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+        copyMembers<span class="token operator">.</span>each <span class="token punctuation">{</span>
+            selectStatements<span class="token operator">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string gstring">&quot;  SELECT MEMBER=<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>it<span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">def</span> selectJcl       <span class="token operator">=</span> selectStatements<span class="token operator">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string gstring">&quot;\n&quot;</span><span class="token punctuation">)</span>  
+
+        iebcopyCopyBooksJcl <span class="token operator">=</span> iebcopyCopyBooksJcl <span class="token operator">+</span> <span class="token string gstring">&quot;\n&quot;</span> <span class="token operator">+</span> iebcopyCopyBooksJclSkel
+        iebcopyCopyBooksJcl <span class="token operator">=</span> iebcopyCopyBooksJcl<span class="token operator">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string gstring">&quot;&lt;target_dsn&gt;&quot;</span><span class="token punctuation">,</span> targetDsn<span class="token punctuation">)</span>
+        iebcopyCopyBooksJcl <span class="token operator">=</span> iebcopyCopyBooksJcl<span class="token operator">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string gstring">&quot;&lt;select_list&gt;&quot;</span><span class="token punctuation">,</span>selectJcl<span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> iebcopyCopyBooksJcl
+
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="createdeletetempdsn"><a href="#createdeletetempdsn" aria-hidden="true" class="header-anchor">#</a> createDeleteTempDsn</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code>    <span class="token keyword">def</span> String <span class="token function">createDeleteTempDsn</span><span class="token punctuation">(</span>String targetDsn<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">def</span> deleteJcl   <span class="token operator">=</span> jobCardJcl
+
+        deleteJcl       <span class="token operator">=</span> deleteJcl <span class="token operator">+</span> <span class="token string gstring">&quot;\n&quot;</span> <span class="token operator">+</span> cleanUpDatasetJclSkel
+        deleteJcl       <span class="token operator">=</span> deleteJcl<span class="token operator">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string gstring">&quot;&lt;clean_dsn&gt;&quot;</span><span class="token punctuation">,</span> targetDsn<span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> deleteJcl
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="readskelfile"><a href="#readskelfile" aria-hidden="true" class="header-anchor">#</a> readSkelFile</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code>    <span class="token keyword">def</span> <span class="token function">readSkelFile</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">def</span> jclStatements       <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        FileHelper fileHelper   <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileHelper</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">def</span> skelFilePath    <span class="token operator">=</span> <span class="token string gstring">&quot;<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>workspace<span class="token punctuation">}</span></span>\\${skeletonPath}\\${fileName}&quot;</span>
+
+        <span class="token keyword">def</span> lines           <span class="token operator">=</span> fileHelper<span class="token operator">.</span><span class="token function">readLines</span><span class="token punctuation">(</span>skelFilePath<span class="token punctuation">)</span>
+
+        lines<span class="token operator">.</span>each
+        <span class="token punctuation">{</span>
+            jclStatements<span class="token operator">.</span><span class="token function">add</span><span class="token punctuation">(</span>it<span class="token operator">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> jclStatements
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/CPWR_DevOps_Examples/assets/js/app.75a8ec7a.js" defer></script><script src="/CPWR_DevOps_Examples/assets/js/28.206d73f5.js" defer></script>
+  </body>
+</html>
